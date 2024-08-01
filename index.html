@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#socials">Социальные сети</a></li>
+
+        </ul>
+    </nav>
+
     <header>
-        <nav class="navbar">
-            <a href="#about">Обо мне</a>
-            <a href="#portfolio">Мои работы</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
         <div class="header-content">
             <h2>Привет, я Даниил!</h2>
             <p>Я начинающий разработчик</p>
@@ -25,31 +29,39 @@
         </section>
         <section id="portfolio" class="portfolio">
             <h2>Мои работы</h2>
+            <button id="toggle-light">
+                <img src="/photo/light.png" alt="Toggle Light" id="lightbulb-icon">
+            </button>
             <div class="portfolio-grid">
                 <div class="work-item">
+                    <div class="work-image">
+                        <img src="photo/cloudy.png" alt="Сайт о погоде">
+                    </div>
                     <h3>Сайт о погоде</h3>
-                    <p>Сайт о погоде в реальном времени.</p>
+                    <p>Сайт с информацией о погоде в реальном времени.</p>
                     <a href="https://github.com/Danik1703/weather-plugin" target="_blank" class="btn">Посмотреть проект</a>
                 </div>
                 <div class="work-item">
+                    <div class="work-image">
+                        <img src="photo/logo3.png" alt="Магазин Одежды">
+                    </div>
                     <h3>Магазин Одежды</h3>
-                    <p>Простой магазин одежды с корзиной.</p>
+                    <p>Простой магазин одежды с функцией корзины.</p>
                     <a href="https://github.com/Danik1703/clothes-shop-v2" target="_blank" class="btn">Посмотреть проект</a>
                 </div>
                 <div class="work-item">
+                    <div class="work-image">
+                        <img src="photo/dino1.png" alt="Игра Динозаврик">
+                    </div>
                     <h3>Игра Динозаврик</h3>
-                    <p>Простая игра динозаврик как в Google.</p>
+                    <p>Простая игра динозаврик, как в Google.</p>
                     <a href="https://github.com/Danik1703/Dinosavrik" target="_blank" class="btn">Посмотреть проект</a>
                 </div>
             </div>
         </section>
-        <section id="contacts" class="contacts">
-            <h2>Контакты</h2>
-            <p>Email: kartoshkavkusnay@gmail.com</p>
-        </section>
-        <section class="socials">
+        <section id="socials" class="socials">
             <a href="https://github.com/ваш-логин" target="_blank" class="social-icon">
-                <img src="/photo/github-mark-white.png" alt="GitHub">
+                <img src="/photo/github.png" alt="GitHub">
             </a>
             <a href="https://www.instagram.com" target="_blank" class="social-icon">
                 <img src="/photo/instagram.png" alt="Instagram">
@@ -65,5 +77,6 @@
     <footer>
         <p>Мой подвал</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
