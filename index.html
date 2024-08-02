@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Визитка</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <nav>
         <ul class="navigation">
             <li><a href="#about">Обо мне</a></li>
             <li><a href="#portfolio">Портфолио</a></li>
             <li><a href="#socials">Социальные сети</a></li>
-
         </ul>
     </nav>
 
     <header>
         <div class="header-content">
-            <h2>Привет, я Даниил!</h2>
-            <p>Я начинающий разработчик</p>
+            <div class="header-text">
+                <h1>Привет, я Даниил!</h1>
+                <p>Я начинающий разработчик, специализирующийся на веб-дизайне. Мой опыт включает в
+                    себя создание сайтов с интерактивным пользовательским интерфейсом.</p>
+                <p>Мои навыки охватывают HTML, CSS, JavaScript и использование фреймворков, таких как Bootstrap. Я
+                    стремлюсь к созданию эффективных и креативных решений, которые удовлетворяют потребности
+                    пользователей.</p>
+            </div>
+            <img src="photo/working.gif" alt="Animation" class="header-gif">
         </div>
     </header>
+
     <div class="container">
-        <section id="about" class="about">
-            <h2>Обо мне</h2>
-            <p>Я начинающий разработчик сайтов и игр.</p>
-        </section>
+        <h2>Обо мне</h2>
+        <p>Я начинающий разработчик сайтов. Моя цель – создавать эффективные и красивы решения, которые приносят
+            удовольствие пользователям. В процессе работы я следую современным трендам в
+            разработке.</p>
+        <p>Я активно обучаюсь и стремлюсь улучшать свои навыки. В данный момент я работаю над проектом по веб-сайту.</p>
         <section id="portfolio" class="portfolio">
             <h2>Мои работы</h2>
             <button id="toggle-light">
-                <img src="/photo/light.png" alt="Toggle Light" id="lightbulb-icon">
+                <img src="photo/light.png" alt="Toggle Light" id="lightbulb-icon">
             </button>
             <div class="portfolio-grid">
                 <div class="work-item">
@@ -39,7 +52,8 @@
                     </div>
                     <h3>Сайт о погоде</h3>
                     <p>Сайт с информацией о погоде в реальном времени.</p>
-                    <a href="https://github.com/Danik1703/weather-plugin" target="_blank" class="btn">Посмотреть проект</a>
+                    <a href="https://github.com/Danik1703/weather-plugin" target="_blank" class="btn">Посмотреть
+                        проект</a>
                 </div>
                 <div class="work-item">
                     <div class="work-image">
@@ -47,7 +61,8 @@
                     </div>
                     <h3>Магазин Одежды</h3>
                     <p>Простой магазин одежды с функцией корзины.</p>
-                    <a href="https://github.com/Danik1703/clothes-shop-v2" target="_blank" class="btn">Посмотреть проект</a>
+                    <a href="https://github.com/Danik1703/clothes-shop-v2" target="_blank" class="btn">Посмотреть
+                        проект</a>
                 </div>
                 <div class="work-item">
                     <div class="work-image">
@@ -59,24 +74,70 @@
                 </div>
             </div>
         </section>
-        <section id="socials" class="socials">
-            <a href="https://github.com/ваш-логин" target="_blank" class="social-icon">
-                <img src="/photo/github.png" alt="GitHub">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon">
-                <img src="/photo/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="social-icon">
-                <img src="/photo/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://www.youtube.com" target="_blank" class="social-icon">
-                <img src="/photo/yotube.png" alt="YouTube">
-            </a>
+        <section id="skills" class="skills">
+            <h2>Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-image">
+                        <img src="photo/html.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Изучаю и использую для создания структуры веб-страниц.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-image">
+                        <img src="photo/css.png" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Использую для красивых стилей на веб-страницах.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-image">
+                        <img src="photo/js.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Изучаю для более удобного функционала на сайте.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-image">
+                        <img src="photo/bootstrap.png" alt="Bootstrap">
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Изучаю для того чтобы проект был более адаптивный.</p>
+                </div>
+            </div>
         </section>
+        
+        
     </div>
     <footer>
+        <section id="socials" class="socials">
+            <a href="https://github.com/ваш-логин" target="_blank" class="social-icon">
+                <img src="photo/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <img src="photo/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social-icon">
+                <img src="photo/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                <img src="photo/yotube.png" alt="YouTube">
+            </a>
+        </section>
         <p>Мой подвал</p>
     </footer>
+    
     <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6HJTY5KVphtPhzWj9WO1clHTMGaV9jjPBsPH6P9hRFi7J98meB"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 </html>
