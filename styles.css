@@ -1,14 +1,27 @@
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Your Chosen Font", sans-serif;
+    font-family: 'Ubuntu', sans-serif; 
     background-color: #f4f4f4;
     background-size: cover;
     background-position: center;
     text-align: center;
 }
 
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', serif; 
+}
+
+
+p {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+
 header {
+    font-family: 'Ubuntu', sans-serif; 
     margin-top: 70px; 
     padding: 40px 20px;
     background: #fff; 
@@ -17,6 +30,38 @@ header {
     align-items: center;
     justify-content: flex-end; 
 }
+
+
+footer {
+    font-family: 'Ubuntu', sans-serif; 
+    background-color: whitesmoke;
+    color: #000; 
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn {
+    font-family: 'Ubuntu', serif; 
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: gainsboro;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background-color: gainsboro;
+    transform: scale(1.05);
+    border-color: gainsboro;
+}
+
 
 .header-content {
     display: flex;
@@ -54,7 +99,6 @@ header {
 }
 
 
-
 nav {
     position: fixed; 
     top: 0;
@@ -67,7 +111,6 @@ nav {
     z-index: 1000;
     border: none; 
 }
-
 
 .navigation {
     display: flex;
@@ -85,7 +128,6 @@ nav {
     text-decoration: none;
     color: #000; 
     font-size: 1.2em; 
-
 }
 
 .navigation a:hover {
@@ -93,6 +135,8 @@ nav {
     background: rgba(255, 255, 255, 0.5); 
     border-radius: 4px; 
 }
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -114,6 +158,7 @@ p {
     margin-bottom: 20px;
     color: black;
 }
+
 
 .about, .portfolio, .socials {
     margin: 20px;
@@ -141,6 +186,7 @@ p {
     width: 50px;
     transition: transform 0.3s, filter 0.3s;
 }
+
 
 .portfolio-grid {
     display: flex;
@@ -190,7 +236,6 @@ p {
 }
 
 
-
 h3 {
     font-size: 1.6em;
     color: #333;
@@ -204,6 +249,7 @@ p {
     color: #666;
     margin-bottom: 20px;
 }
+
 
 .btn {
     display: inline-block;
@@ -224,12 +270,14 @@ p {
     border-color: gainsboro;
 }
 
+
 .light-on .work-item {
     box-shadow: 0 0 20px 5px rgba(255, 255, 102, 0.8),
                 0 0 30px 15px rgba(255, 255, 178, 0.6),
                 0 0 40px 25px rgba(255, 255, 204, 0.4);
     transition: box-shadow 0.3s;
 }
+
 
 .skills {
     background-color: #f9f9f9;
@@ -297,14 +345,6 @@ p {
 }
 
 
-footer {
-    background-color: whitesmoke;
-    color: #000; 
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
-}
-
 .socials {
     display: flex;
     justify-content: center; 
@@ -325,4 +365,3 @@ footer {
 .social-icon:hover img {
     transform: scale(1.2); 
 }
-
