@@ -12,3 +12,24 @@ document.getElementById('toggle-light').addEventListener('click', function () {
 });
 
 
+
+
+
+
+document.addEventListener('scroll', function () {
+ const sections = document.querySelectorAll('.section');
+
+const windowHeight = window.innerHeight;
+
+ sections.forEach(function (section) {
+
+const sectionTop = section.offsetTop - window.scrollY;
+
+   if (sectionTop < windowHeight * 0.75) {
+
+   section.classList.add('visible');
+        } else {
+            section.classList.remove('visible');
+        }
+    });
+});
